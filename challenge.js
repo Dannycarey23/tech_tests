@@ -1,24 +1,8 @@
-// sum.js
+
 export function sum(a, b) {
     return a + b
 }
 
-// export function calculateFactorial(num) {
-
-//     let startingNumber = parseInt(num)
-//     let factorial = parseInt(num)
-//     let currentTotal = factorial * startingNumber
-
-//     while (factorial > 0) {
-//         let sumTotal = 0;
-//         factorial-- ;
-//         sumTotal = startingNumber * factorial;
-//         currentTotal = currentTotal + sumTotal;
-//         sumTotal = 0;
-//     }
-
-//     return currentTotal
-// }
 
 export function calculateFactorial(num) {
 

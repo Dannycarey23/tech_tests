@@ -1,4 +1,4 @@
-// sum.test.js
+
 import { expect, test } from 'vitest'
 import { sum, calculateFactorial } from './challenge'
 
