@@ -1,6 +1,6 @@
 
 import { expect, test } from 'vitest'
-import { sum, calculateFactorial, calculateLeapYear, removeDuplicateCharacters } from './challenge'
+import { sum, calculateFactorial, calculateLeapYear, removeDuplicateCharacters, isIsogram } from './challenge'
 
 test('adds 1 + 2 to equal 3', () => {
     expect(sum(1, 2)).toBe(3)
@@ -35,4 +35,14 @@ test('check that movement becomes movent', () => {
 
 test('check that congratulatory becomes congratuly', () => {
     expect(removeDuplicateCharacters("congratulatory")).toBe("congratuly")
+})
+
+test('Confirm that diablo is an isogram', () => {
+    expect(isIsogram("DiAblo")).toBe(true)
+})
+test('Confirm that deed is not an isogram', () => {
+    expect(isIsogram("deed")).toBe(false)
+})
+test('Confirm that intestines is an isogram', () => {
+    expect(isIsogram("intestines")).toBe(false)
 })
