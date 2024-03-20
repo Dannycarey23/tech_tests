@@ -41,9 +41,24 @@ export function calculateLeapYear(year) {
 
     if (chosenYear % 4 === 0) {
         return isLeapYear = true
-    }else{
+    } else {
         return isLeapYear = false
     }
 
     return isLeapYear
+}
+
+// Remove duplicate characters from a string
+
+export function removeDuplicateCharacters(string) {
+    let testString = string.toLowerCase().split('')
+    let loopedString = []
+
+    testString.forEach(character => {
+        if (!loopedString.includes(character)) {
+            loopedString.push(character)
+        }
+    });
+    
+    return loopedString.join('')
 }

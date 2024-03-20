@@ -1,6 +1,6 @@
 
 import { expect, test } from 'vitest'
-import { sum, calculateFactorial, calculateLeapYear } from './challenge'
+import { sum, calculateFactorial, calculateLeapYear, removeDuplicateCharacters } from './challenge'
 
 test('adds 1 + 2 to equal 3', () => {
     expect(sum(1, 2)).toBe(3)
@@ -23,4 +23,16 @@ test('check that 2023 is not a leap year', () => {
 
 test('check that 2022 is not a leap year', () => {
     expect(calculateLeapYear(2022)).toBe(false)
+})
+
+test('check that hello becomes helo', () => {
+    expect(removeDuplicateCharacters("hello")).toBe("helo")
+})
+
+test('check that movement becomes movent', () => {
+    expect(removeDuplicateCharacters("movement")).toBe("movent")
+})
+
+test('check that congratulatory becomes congratuly', () => {
+    expect(removeDuplicateCharacters("congratulatory")).toBe("congratuly")
 })
