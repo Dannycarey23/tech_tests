@@ -3,6 +3,7 @@ export function sum(a, b) {
     return a + b
 }
 
+// Factorial 
 
 export function calculateFactorial(num) {
 
@@ -29,4 +30,20 @@ export function calculateFactorial(num) {
     console.log(answer)
 
     return answer
+}
+
+// Leap Year
+
+export function calculateLeapYear(year) {
+
+    let chosenYear = year
+    let isLeapYear
+
+    if (chosenYear % 4 === 0) {
+        return isLeapYear = true
+    }else{
+        return isLeapYear = false
+    }
+
+    return isLeapYear
 }
