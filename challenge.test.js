@@ -1,6 +1,6 @@
 
 import { expect, test } from 'vitest'
-import { sum, calculateFactorial, calculateLeapYear, removeDuplicateCharacters, isIsogram } from './challenge'
+import { sum, calculateFactorial, calculateLeapYear, removeDuplicateCharacters, isIsogram, findLongestWord } from './challenge'
 
 test('adds 1 + 2 to equal 3', () => {
     expect(sum(1, 2)).toBe(3)
@@ -46,3 +46,11 @@ test('Confirm that deed is not an isogram', () => {
 test('Confirm that intestines is an isogram', () => {
     expect(isIsogram("intestines")).toBe(false)
 })
+
+test('Returns the longest word from the supplied sentence', () => {
+    expect(findLongestWord("a game of thrones")).toBe("thrones")
+})
+test('Returns the longest word from the supplied sentence', () => {
+    expect(findLongestWord("congratulations on your new job")).toBe("congratulations")
+})
+
