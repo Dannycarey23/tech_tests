@@ -1,3 +1,4 @@
+import { test } from "vitest";
 
 export function sum(a, b) {
     return a + b
@@ -112,6 +113,43 @@ export function sumOfAllNumbers(nums) {
     })
 
     return total
+}
 
+// Count the occurrences of each character in a string
+
+// export function countCharacterOccurences(string) {
+
+//     let testString = string.toLowerCase().split('')
+//     console.log(testString)
+//     let characterOccurences = {};
+
+//     // loop over each letter in the testString. If that letter doesnt exist in characterOccurrences - create it and set the value to 1
+//     // if it does exist, increase the value by 1
+
+//     return characterOccurences;
+
+// }
+
+
+
+
+// Filter even numbers from an array
+
+
+export function filterEvenNumbers(numbers) {
+
+    let testNumbers = numbers.toString().split('')
+
+    let answer = [];
+
+    testNumbers.forEach((number) => {
+        if (parseInt(number) % 2 === 0) {
+            answer.push(number)
+        }
+    })
+
+    console.log(answer)
+
+    return parseInt(answer.join(''));
 
 }
