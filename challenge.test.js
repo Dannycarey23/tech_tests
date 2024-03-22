@@ -1,6 +1,6 @@
 
 import { expect, test } from 'vitest'
-import { sum, calculateFactorial, calculateLeapYear, removeDuplicateCharacters, isIsogram, findLongestWord } from './challenge'
+import { sum, calculateFactorial, calculateLeapYear, removeDuplicateCharacters, isIsogram, findLongestWord, sumOfAllNumbers } from './challenge'
 
 test('adds 1 + 2 to equal 3', () => {
     expect(sum(1, 2)).toBe(3)
@@ -52,5 +52,15 @@ test('Returns the longest word from the supplied sentence', () => {
 })
 test('Returns the longest word from the supplied sentence', () => {
     expect(findLongestWord("congratulations on your new job")).toBe("congratulations")
+})
+
+test('Calculate the sum of digits in a number', () => {
+    expect(sumOfAllNumbers(12345)).toBe(15)
+})
+test('Calculate the sum of digits in a number', () => {
+    expect(sumOfAllNumbers(123456789)).toBe(45)
+})
+test('Calculate the sum of digits in a number', () => {
+    expect(sumOfAllNumbers(987654321)).toBe(45)
 })
 
