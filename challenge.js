@@ -35,19 +35,7 @@ export function calculateFactorial(num) {
 
 // Leap Year
 
-export function calculateLeapYear(year) {
 
-    let chosenYear = year
-    let isLeapYear
-
-    if (chosenYear % 4 === 0) {
-        return isLeapYear = true
-    } else {
-        return isLeapYear = false
-    }
-
-    return isLeapYear
-}
 
 // Remove duplicate characters from a string
 
