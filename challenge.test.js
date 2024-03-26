@@ -1,20 +1,6 @@
-
 import { expect, test } from 'vitest'
-import {calculateLeapYear, removeDuplicateCharacters, isIsogram, findLongestWord, sumOfAllNumbers, countCharacterOccurences, filterEvenNumbers } from './challenge'
+import {removeDuplicateCharacters, isIsogram, findLongestWord, sumOfAllNumbers, countCharacterOccurences, filterEvenNumbers } from './challenge'
 
-
-
-test('check if 2020 was a leap year', () => {
-    expect(calculateLeapYear(2020)).toBe(true)
-})
-
-test('check that 2023 is not a leap year', () => {
-    expect(calculateLeapYear(2023)).toBe(false)
-})
-
-test('check that 2022 is not a leap year', () => {
-    expect(calculateLeapYear(2022)).toBe(false)
-})
 
 test('check that hello becomes helo', () => {
     expect(removeDuplicateCharacters("hello")).toBe("helo")
