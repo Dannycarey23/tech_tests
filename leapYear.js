@@ -1,15 +1,15 @@
 export function calculateLeapYear(year) {
 
-    let isLeapYear
+    let isLeapYear = false
 
     if (year % 4 === 0 && year % 400 === 0) {
-        return isLeapYear = true
+        isLeapYear = true
     } else if (year % 4 === 0 && year % 100 === 0) {
-        return isLeapYear = false
+        isLeapYear = false
     } else if (year % 4 === 0) {
-        return isLeapYear = true
-    } else {
-        return isLeapYear = false
+        isLeapYear = true
     }
+
+    return isLeapYear
 
 }
