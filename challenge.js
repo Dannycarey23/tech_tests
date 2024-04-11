@@ -103,28 +103,6 @@ export function sumOfAllNumbers(nums) {
     return total
 }
 
-// Count the occurrences of each character in a string
-
-// export function countCharacterOccurences(string) {
-
-//     let testString = string.toLowerCase().split('')
-//     console.log(testString)
-let characterOccurences = {};
-characterOccurences.h = 123
-console.log(characterOccurences)
-
-
-
-//     // loop over each letter in the testString. If that letter doesnt exist in characterOccurrences - create it and set the value to 1
-//     // if it does exist, increase the value by 1
-
-//     return characterOccurences;
-
-// }
-
-
-
-
 // Filter even numbers from an array
 
 

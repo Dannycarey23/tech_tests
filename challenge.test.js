@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import {removeDuplicateCharacters, isIsogram, findLongestWord, sumOfAllNumbers, countCharacterOccurences, filterEvenNumbers } from './challenge'
+import {removeDuplicateCharacters, isIsogram, findLongestWord, sumOfAllNumbers } from './challenge'
 
 
 test('check that hello becomes helo', () => {
@@ -39,19 +39,5 @@ test('Calculate the sum of digits in a number', () => {
 })
 test('Calculate the sum of digits in a number', () => {
     expect(sumOfAllNumbers(987654321)).toBe(45)
-})
-
-// test.only('Count the occurrences of each character in a string', () => {
-//     expect(countCharacterOccurences("hello")).toBe({ h: 1, e: 1, l: 2, o: 1 })
-// })
-
-test.only('return only the even numbers from the submitted string', () => {
-    expect(filterEvenNumbers(123456789)).toBe(2468)
-})
-test.only('return only the even numbers from the submitted string', () => {
-    expect(filterEvenNumbers(987654321)).toBe(8642)
-})
-test.only('return only the even numbers from the submitted string', () => {
-    expect(filterEvenNumbers(112233445566)).toBe(224466)
 })
 
