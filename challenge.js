@@ -102,24 +102,3 @@ export function sumOfAllNumbers(nums) {
 
     return total
 }
-
-// Filter even numbers from an array
-
-
-export function filterEvenNumbers(numbers) {
-
-    let testNumbers = numbers.toString().split('')
-
-    let answer = [];
-
-    testNumbers.forEach((number) => {
-        if (parseInt(number) % 2 === 0) {
-            answer.push(number)
-        }
-    })
-
-    console.log(answer)
-
-    return parseInt(answer.join(''));
-
-}
