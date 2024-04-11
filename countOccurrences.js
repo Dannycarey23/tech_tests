@@ -17,6 +17,6 @@ export function countOccurences(word) {
             characterCount[letter]++
         }
     })
-    console.log(characterCount)
+
     return characterCount;
 }

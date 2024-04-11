@@ -11,7 +11,5 @@ export function flattenArray(array) {
 
     let flattenedArray = array.flat(Infinity)
 
-    console.log(flattenedArray);
-
     return flattenedArray
 }

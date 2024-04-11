@@ -16,7 +16,5 @@ export function findIntersection(array1, array2) {
         }
     })
 
-    console.log(intersections)
-
     return intersections;
 } 
