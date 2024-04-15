@@ -8,13 +8,16 @@
 
 export function findIntersection(array1, array2) {
 
-    let intersections = []
+    // let intersections = []
 
-    array1.forEach((number) => {
-        if (array2.includes(number)) {
-            intersections.push(number)
-        }
-    })
+    // array1.forEach((number) => {
+    //     if (array2.includes(number)) {
+    //         intersections.push(number)
+    //     }
+    // })
 
-    return intersections;
+    // return intersections;
+
+    console.log(array1.filter((num) => array2.includes(num)))
+    return array1.filter((num) => array2.includes(num))
 } 

@@ -9,13 +9,16 @@
 
 export function filterEvenNumbers(numbers) {
 
-    let answer = [];
+    // let answer = [];
 
-    numbers.forEach((number) => {
-        if (parseInt(number) % 2 === 0) {
-            answer.push(number)
-        }
-    })
+    // numbers.forEach((number) => {
+    //     if (parseInt(number) % 2 === 0) {
+    //         answer.push(number)
+    //     }
+    // })
 
-    return answer;
+    // return answer
+
+    console.log(numbers.filter((num) => num % 2 === 0))
+    return numbers.filter((num) => num % 2 === 0);
 }
